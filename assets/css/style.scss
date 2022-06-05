@@ -1,0 +1,46 @@
+.mt-50
+{
+    margin-top: 50px !important;
+}
+
+.mb-40
+{
+    margin-bottom: 40px !important;
+}
+
+.mb-50
+{
+    margin-bottom: 50px  !important;
+}
+
+.article
+{
+    h2:first-child
+    {
+        margin-top: 10px;
+    }
+    h2
+    {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+
+        padding-bottom: 20px;
+        border-bottom: 3px solid white;
+    }
+
+    p
+    {
+        font-size: 18px;
+    }
+}
+
+.clear
+{
+    clear: both;
+}
+
+h1
+{
+    font-size: 32px;
+}
