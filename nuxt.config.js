@@ -2,7 +2,7 @@ import colors from "vuetify/es5/util/colors";
 import axios from "axios";
 
 const url = "https://f7yzrr328v.microcms.io/api/v1/article";
-const base = "http://localhost:3000";
+const base = "https://pincers-blog.com";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
