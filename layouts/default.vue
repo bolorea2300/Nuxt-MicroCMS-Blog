@@ -65,6 +65,15 @@
 
 <script>
 export default {
+  head: {
+    script: [
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2166373542921617",
+        crossorigin: "anonymous",
+        async: true,
+      },
+    ],
+  },
   data: () => ({ drawer: null, dialog: false, select: 1, word: "" }),
   methods: {
     search: function () {
