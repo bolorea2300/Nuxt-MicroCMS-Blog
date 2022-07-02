@@ -9,7 +9,7 @@
         :key="data.contents.id"
       >
         <v-card :to="'/article/' + list.id" nuxt>
-          <v-img :src="list.image.url" height="300px">
+          <v-img :src="list.image.url" height="300px" lazy-src="/lazy.png">
             <v-chip
               class="ma-2"
               color="primary"

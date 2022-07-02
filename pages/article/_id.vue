@@ -13,7 +13,7 @@
         {{ list.tagname }}
       </v-chip>
     </div>
-    <v-img height="250" :src="data.image.url"></v-img>
+    <v-img height="250" :src="data.image.url" lazy-src="/lazy.png"></v-img>
 
     <v-card class="mt-50">
       <v-card-text>

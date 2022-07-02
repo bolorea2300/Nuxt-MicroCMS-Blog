@@ -26,22 +26,16 @@
   font-size: 18px;
 }
 
+.article img {
+  width: 100%;
+  max-width: 600px;
+}
+
 .clear {
   clear: both;
 }
 
 h1 {
   font-size: 32px;
-}
-
-pre
-{
-  background-color: black;
-  padding: 10px;
-}
-
-pre code
-{
-  background-color: black !important;
 }
 /*# sourceMappingURL=style.css.map */
