@@ -43,6 +43,13 @@ export default {
   head() {
     return {
       titleTemplate: null,
+      meta: [
+        {
+          hid: "description",
+          property: "description",
+          content: "Pincerという者が運営するブログです。",
+        },
+      ],
     };
   },
   data() {
