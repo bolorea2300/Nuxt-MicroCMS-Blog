@@ -10,6 +10,7 @@ export default {
   head() {
     return {
       title: "このページは存在しません",
+      meta: [{ hid: "robots", name: "robots", content: "noindex" }],
     };
   },
 };
