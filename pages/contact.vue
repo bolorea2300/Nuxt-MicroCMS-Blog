@@ -13,6 +13,16 @@
         </ul>
       </v-card-text>
     </v-card>
+
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeqJjqMyYFoxkl6hPX3mrmLkD3Tp8ryGjaKmyZXTkAE6HxAyA/viewform?embedded=true"
+      width="640"
+      height="574"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >読み込んでいます…</iframe
+    >
   </v-container>
 </template>
 
