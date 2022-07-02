@@ -58,6 +58,7 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
     "nuxt-microcms-module",
+    "@nuxtjs/google-analytics",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -97,6 +98,15 @@ export default {
       apiKey: process.env.API_KEY,
     },
     mode: process.env.NODE_ENV === "all",
+  },
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    },
   },
 
   sitemap: {
