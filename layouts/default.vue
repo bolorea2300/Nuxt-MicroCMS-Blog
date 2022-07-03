@@ -114,7 +114,7 @@ export default {
   display: block;
   width: 25px;
   height: 3px;
-  background: rgba(0, 0, 0, 0.87);
+  background: rgba(255, 255, 255, 0.87);
   transition: all 0.5s ease;
 }
 
