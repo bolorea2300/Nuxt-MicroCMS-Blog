@@ -109,6 +109,13 @@ export default {
     },
   },
 
+  vuetify: {
+    defaultAssets: {
+      icons: false,
+      font: false,
+    },
+  },
+
   sitemap: {
     path: "/sitemap.xml",
     hostname: base,

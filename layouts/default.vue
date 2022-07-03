@@ -1,21 +1,15 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app>
+      <h2>メニュー</h2>
       <v-list dense>
-        <v-subheader>メニュー</v-subheader
-        ><v-list-item-group v-model="select" color="primary">
+        <v-list-item-group v-model="select" color="primary">
           <v-list-item to="/" nuxt>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>タイトル</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item to="/contact" nuxt>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>お問い合わせ</v-list-item-title>
             </v-list-item-content>
@@ -25,13 +19,17 @@
     </v-navigation-drawer>
 
     <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-btn text @click="drawer = !drawer">
+        <div class="menubutton">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </v-btn>
 
       <v-toolbar-title>Pincer's Blog</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon @click="dialog = !dialog">
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+      <v-btn icon @click="dialog = !dialog"> 🔍 </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -74,7 +72,12 @@ export default {
       },
     ],
   },
-  data: () => ({ drawer: null, dialog: false, select: 1, word: "" }),
+  data: () => ({
+    drawer: null,
+    dialog: false,
+    select: 1,
+    word: "",
+  }),
   methods: {
     search: function () {
       this.$router.push("/search?keyword=" + this.word);
@@ -96,3 +99,34 @@ export default {
   },
 };
 </script>
+
+<style>
+.menubutton {
+  z-index: 3;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.menubutton .line {
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.87);
+  transition: all 0.5s ease;
+}
+
+.line1 {
+  top: 5px;
+}
+
+.line2 {
+  top: 13.5px;
+}
+
+.line3 {
+  bottom: 5px;
+}
+</style>
