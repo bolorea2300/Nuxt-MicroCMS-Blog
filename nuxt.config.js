@@ -114,6 +114,9 @@ export default {
       icons: false,
       font: false,
     },
+    theme: {
+      dark: true,
+    },
   },
 
   sitemap: {
