@@ -9,17 +9,28 @@
         :key="data.contents.id"
       >
         <v-card :to="'/article/' + list.id" nuxt>
-          <v-img :src="list.image.url" height="300px" lazy-src="/lazy.png">
-            <v-chip
-              class="ma-2"
-              color="primary"
-              v-for="(data, id) in list.tags"
-              :key="id"
-              v-text="data.tagname"
-              :to="'/tag/' + data.id"
+          <div class="space">
+            <nuxt-img
+              class="full"
+              :src="list.image.url"
+              height="300px"
+              loading="lazy"
+              alt="/lazy.png"
             >
-            </v-chip>
-          </v-img>
+            </nuxt-img>
+            <div class="tags">
+              <v-chip
+                class="ma-2"
+                color="primary"
+                v-for="(data, id) in list.tags"
+                :key="id"
+                v-text="data.tagname"
+                :to="'/tag/' + data.id"
+              >
+              </v-chip>
+            </div>
+          </div>
+
           <v-card-title>{{ list.title }}</v-card-title>
         </v-card>
       </v-col>

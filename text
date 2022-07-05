@@ -1,0 +1,11 @@
+<v-img :src="list.image.url" height="300px" lazy-src="/lazy.png">
+  <v-chip
+    class="ma-2"
+    color="primary"
+    v-for="(data, id) in list.tags"
+    :key="id"
+    v-text="data.tagname"
+    :to="'/tag/' + data.id"
+  >
+  </v-chip>
+</v-img>
