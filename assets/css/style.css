@@ -39,16 +39,7 @@ h1 {
   font-size: 32px;
 }
 
-.full {
-  width: 100%;
-}
-
-.space {
-  position: relative;
-}
-
 .tags {
-  position: absolute;
-  top: 0;
+  padding: 0 16px 16px 16px;
 }
 /*# sourceMappingURL=style.css.map */
