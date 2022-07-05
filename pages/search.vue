@@ -10,8 +10,7 @@
         :key="data.contents.id"
       >
         <v-card :to="'/article/' + list.id" nuxt>
-          <v-card-title>{{ list.title }}</v-card-title>
-          <div class="tags">
+          <div>
             <v-chip
               class="ma-2"
               color="primary"
@@ -22,6 +21,7 @@
             >
             </v-chip>
           </div>
+          <v-card-title>{{ list.title }}</v-card-title>
         </v-card>
       </v-col>
     </v-row>
