@@ -54,4 +54,13 @@ h1 {
 .tags {
   padding: 0 16px 16px 16px;
 }
+
+pre {
+  background-color: black;
+  padding: 10px;
+}
+
+pre code {
+  background-color: none !important;
+}
 /*# sourceMappingURL=style.css.map */
