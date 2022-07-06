@@ -62,7 +62,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/sitemap", "@nuxtjs/axios", "@nuxt/image"],
+  modules: ["@nuxtjs/sitemap", "@nuxtjs/axios"],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

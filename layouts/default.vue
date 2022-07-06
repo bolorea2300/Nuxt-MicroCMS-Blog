@@ -9,6 +9,11 @@
               <v-list-item-title>タイトル</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          <v-list-item to="/policy" nuxt>
+            <v-list-item-content>
+              <v-list-item-title>プライバシーポリシー</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
           <v-list-item to="/contact" nuxt>
             <v-list-item-content>
               <v-list-item-title>お問い合わせ</v-list-item-title>

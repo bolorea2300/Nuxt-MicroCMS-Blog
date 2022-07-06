@@ -1,5 +1,13 @@
+.mt-20 {
+  margin-top: 20px !important;
+}
+
 .mt-50 {
   margin-top: 50px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
 }
 
 .mb-40 {
@@ -8,6 +16,10 @@
 
 .mb-50 {
   margin-bottom: 50px  !important;
+}
+
+.p0 p {
+  margin-bottom: 0 !important;
 }
 
 .article h2:first-child {
